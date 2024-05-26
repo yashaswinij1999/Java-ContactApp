@@ -41,14 +41,15 @@ public final class Logger {
 
                 try {
                     bw = new BufferedWriter(new FileWriter(currentDirectory + "/log.txt", true));
-                    String str = data + ":" + dt;
-                    bw.write(str);
+                    String newData = data + ":" + dt;
+                    bw.write(newData);
                     bw.newLine();
 
                 } catch (Exception e) {
                     // TODO: handle exception
                     e.printStackTrace();
                     e.getMessage();
+
                 } finally {
                     try {
                         if (bw != null) {

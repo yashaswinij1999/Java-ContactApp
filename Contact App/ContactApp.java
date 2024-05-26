@@ -8,6 +8,7 @@ public class ContactApp {
         Scanner sc1 = new Scanner(System.in);
         Scanner sc2 = new Scanner(System.in);
         int choice = 0;
+        String fileName = "";
 
         Util.menu(1);
         while (choice < 5) {
@@ -25,7 +26,8 @@ public class ContactApp {
 
             switch (choice) {
                 case 1:
-                    System.out.println("to add");
+                    System.out.println("Enter the file name");
+                    fileName = sc1.next();
                     break;
                 case 2:
                     System.out.println("to load");
