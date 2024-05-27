@@ -34,7 +34,7 @@ public class ContactApp {
                     if (c.checkIfFileNameExists(fileName)) {
                         System.out.println("file created");
 
-                        while (choice != 6) {
+                        while (choice < 6) {
 
                             System.out.println(" ");
                             System.out.println("Press 1 to add Contact ");
@@ -58,8 +58,8 @@ public class ContactApp {
 
                                     System.out.println("Enter phoneNumber");
                                     phonenumber = sc1.next();
-
                                     break;
+                                    
                                 case 2:
                                     System.out.println("to edit");
                                     break;
