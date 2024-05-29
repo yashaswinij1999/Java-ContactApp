@@ -12,13 +12,20 @@ This is a simple command-line contact management application written in Java. It
 - Delete a contact from the list.
 
 ### Problem Statement
-- 
+
+- Each Contacts are created as text file.
+- User can perform **CRUD** operations using ContactApp.
+- Logger is implemented in order to track the control flow and handle exceptions.
+- Utility methods are implemented in order to solve **DRY** principle.
+- **ContactBean** is created in order to store the state/instance variables.
+- **MVC** Design Pattern is implemented.
 
 ## Technologies Used
 
 - Visual Studio Code
 
 ## Concepts Used.
+
 - OOPS
 - Logger
 - IO
@@ -42,13 +49,13 @@ This is a simple command-line contact management application written in Java. It
 1. **Clone the repository** (if you have Git installed) or download the repository as a ZIP file and extract it.
 
    ```
-   git clone https://github.com/yourusername/contact-management.git
+   git clone https://github.com/yashaswinij1999/Java-ContactApp
    ```
 
 2. **Navigate to the project directory:**
 
    ```
-   cd contact-management
+   cd Java-ContactApp
    ```
 
 3. **Compile the Java files:**
@@ -60,4 +67,3 @@ This is a simple command-line contact management application written in Java. It
    ```
    java <Class Name>
    ```
-
