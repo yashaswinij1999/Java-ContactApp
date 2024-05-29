@@ -11,6 +11,7 @@ public class ContactApp {
         String fileName = "";
         String name, email, phonenumber, existingWord, newWord;
         ContactAppModel c = new ContactAppModel();
+        Logger l = Logger.getInstance();
 
         Util.menu(1);
         while (choice != 5) {
@@ -28,12 +29,14 @@ public class ContactApp {
 
             switch (choice) {
                 case 1:
+                    l.log("creating the contactBook");
                     System.out.println("Enter the file name");
                     fileName = sc1.next();
 
                     if (c.checkIfFileNameExists(fileName)) {
                         System.out.println("file created");
 
+                        l.log("rendering menu 2");
                         Util.menu(2);
                         while (choice < 6) {
 
@@ -50,7 +53,9 @@ public class ContactApp {
                             choice = sc1.nextInt();
 
                             switch (choice) {
+
                                 case 1:
+                                    l.log("adding contact to file");
                                     System.out.println("Enter the name to add a contact, else  go back to the previous menu");
                                     name = sc1.next();
 
@@ -71,6 +76,7 @@ public class ContactApp {
                                     break;
 
                                 case 2:
+                                    l.log("editing contact to file");
                                     System.out.println("to edit");
                                     System.out.println("Enter existing word");
                                     existingWord = sc1.next();
@@ -86,6 +92,7 @@ public class ContactApp {
                                     break;
 
                                 case 3:
+                                    l.log("deleting the contact to file");
                                     System.out.println("Enter the name of the contact which you want to delete");
                                     name = sc1.next();
                                     if (c.deleteLine(fileName, name)) {
@@ -97,11 +104,13 @@ public class ContactApp {
                                     break;
 
                                 case 4:
+                                    l.log("listing all contacts to file");
                                     System.out.println("to list");
                                     c.listContacts(fileName);
 
                                     break;
                                 case 5:
+                                    l.log("searching the  contact to file");
                                     System.out.println("to search");
                                     System.out.println("Enter the contact which you want to search");
                                     name = sc1.next();
@@ -126,6 +135,7 @@ public class ContactApp {
                     break;
 
                 case 2:
+                    l.log("loading the contactBook");
                     System.out.println("to load");
                     c.listFiles();
 
@@ -153,6 +163,7 @@ public class ContactApp {
 
                                 switch (choice) {
                                     case 1:
+                                        l.log("in loadContacts adding the contacts");
                                         System.out.println("Enter the name to add a contact, else  go back to the previous menu");
                                         name = sc1.next();
 
@@ -173,6 +184,7 @@ public class ContactApp {
                                         break;
 
                                     case 2:
+                                        l.log("in loadContacts editing the contacts");
                                         System.out.println("to edit");
                                         System.out.println("Enter existing word");
                                         existingWord = sc1.next();
@@ -188,8 +200,11 @@ public class ContactApp {
                                         break;
 
                                     case 3:
+                                        l.log("in loadContacts delteting the contacts");
+
                                         System.out.println("Enter the name of the contact which you want to delete");
                                         name = sc1.next();
+
                                         if (c.deleteLine(fileName, name)) {
                                             System.out.println("deleted succesfuly");
                                         } else {
@@ -199,11 +214,13 @@ public class ContactApp {
                                         break;
 
                                     case 4:
+                                        l.log("in loadContacts listing the contacts");
                                         System.out.println("to list");
                                         c.listContacts(fileName);
                                         break;
 
                                     case 5:
+                                        l.log("in loadContacts searching the contacts");
                                         System.out.println("to search");
                                         System.out.println("Enter the contact which you want to search");
                                         name = sc1.next();
@@ -235,6 +252,8 @@ public class ContactApp {
                     break;
 
                 case 3:
+                    l.log("entering the search contacts");
+
                     System.out.println("to search");
                     System.out.println("Enter name of the Contact Book you want to search");
                     fileName = sc1.next();
@@ -259,6 +278,7 @@ public class ContactApp {
 
                                 switch (choice) {
                                     case 1:
+                                        l.log("In search contacts adding the contacts");
                                         System.out.println("Enter the name to add a contact, else  go back to the previous menu");
                                         name = sc1.next();
 
@@ -269,9 +289,11 @@ public class ContactApp {
                                         phonenumber = sc1.next();
 
                                         if (Util.validate(name) && Util.validateEmail(email) && Util.validatePhonenumber(phonenumber)) {
+
                                             ContactBean bean = new ContactBean(name, email, phonenumber);
                                             c.addContact(bean, fileName);
                                             System.out.println("contact added successfully");
+
                                         } else {
                                             System.out.println("enter valid details");
                                         }
@@ -279,20 +301,35 @@ public class ContactApp {
                                         break;
 
                                     case 2:
+                                        l.log("In search contacts editing the contacts");
                                         System.out.println("to edit");
+                                        System.out.println("Enter existing word");
+                                        existingWord = sc1.next();
+
+                                        System.out.println("Enter new word");
+                                        newWord = sc1.next();
+
+                                        if (c.editContacts(fileName, existingWord, newWord)) {
+                                            System.out.println("edited succesfully");
+                                        } else {
+                                            System.out.println("we are unable to edit");
+                                        }
                                         break;
 
                                     case 3:
+                                        l.log("In search contacts deleting the contacts");
                                         System.out.println("Enter the name of the contact which you want to delete");
                                         name = sc1.next();
                                         c.deleteLine(fileName, name);
                                         break;
 
                                     case 4:
+                                        l.log("In search contacts listing all the contacts");
                                         System.out.println("to list");
                                         c.listContacts(fileName);
                                         break;
                                     case 5:
+                                        l.log("In search contacts searching the contacts");
                                         System.out.println("to search");
                                         System.out.println("Enter the contact which you want to search");
                                         name = sc1.next();
@@ -324,6 +361,7 @@ public class ContactApp {
                     break;
 
                 case 4:
+                    l.log("entering the listContactBook");
                     System.out.println("to list");
                     c.listFiles();
                     break;
