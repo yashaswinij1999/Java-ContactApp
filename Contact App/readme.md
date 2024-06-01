@@ -49,7 +49,7 @@ This is a simple command-line contact management application written in Java. It
 1. **Clone the repository** (if you have Git installed) or download the repository as a ZIP file and extract it.
 
    ```
-   git clone https://github.com/yashaswinij1999/Java-ContactApp
+   https://github.com/yashaswinij1999/Java-ContactApp.git
    ```
 
 2. **Navigate to the project directory:**
