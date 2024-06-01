@@ -60,10 +60,10 @@ This is a simple command-line contact management application written in Java. It
 
 3. **Compile the Java files:**
    ```
-   javac *.java
+   javac ContactApp.java
    ```
 4. **Run the application**
 
    ```
-   java <Class Name>
+   java ContactApp
    ```
