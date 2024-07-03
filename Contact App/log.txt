@@ -1,9 +1,0 @@
-creating the contactBook:Wed May 29 16:11:52 IST 2024
-rendering menu 2:Wed May 29 16:11:59 IST 2024
-adding contact to file:Wed May 29 16:12:00 IST 2024
-listing all contacts to file:Wed May 29 16:12:17 IST 2024
-adding contact to file:Wed May 29 16:12:25 IST 2024
-adding contact to file:Wed May 29 16:12:42 IST 2024
-listing all contacts to file:Wed May 29 16:12:59 IST 2024
-searching the  contact to file:Wed May 29 16:13:09 IST 2024
-entering the listContactBook:Wed May 29 16:13:21 IST 2024
