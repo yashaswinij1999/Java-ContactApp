@@ -4,38 +4,17 @@
 
 This is a simple command-line contact management application written in Java. It allows users to manage a list of contacts by adding new contacts, viewing existing contacts, searching for contacts, and deleting contacts.
 
-## Features
+## Index
 
-- Add a new contact with a name and phone number.
-- View the list of all contacts.
-- Search for a contact by name.
-- Delete a contact from the list.
-
-### Problem Statement
-
-- Each Contacts are created as text file.
-- User can perform **CRUD** operations using ContactApp.
-- Logger is implemented in order to track the control flow and handle exceptions.
-- Utility methods are implemented in order to solve **DRY** principle.
-- **ContactBean** is created in order to store the state/instance variables.
-- **MVC** Design Pattern is implemented.
-
-## Technologies Used
-
-- Visual Studio Code
-
-## Concepts Used.
-
-- OOPS
-- Logger
-- IO
-- SingleTon
-- Date class
-- TaskBean
-- MVC1 Design Pattern
-- Scanner Class
-- Collections
-- Exception Handling
+- [Contact Management Application](#contact-management-application)
+  - [Index](#index)
+  - [How to Run](#how-to-run)
+    - [Prerequisites](#prerequisites)
+    - [Steps](#steps)
+  - [Concepts Used.](#concepts-used)
+  - [Problem Statement](#problem-statement)
+  - [Features](#features)
+  - [Technologies Used](#technologies-used)
 
 ## How to Run
 
@@ -67,3 +46,36 @@ This is a simple command-line contact management application written in Java. It
    ```
    java ContactApp
    ```
+
+## Concepts Used.
+
+- OOPS
+- Logger
+- IO
+- SingleTon
+- Date class
+- TaskBean
+- MVC1 Design Pattern
+- Scanner Class
+- Collections
+- Exception Handling
+
+## Problem Statement
+
+- Each Contacts are created as text file.
+- User can perform **CRUD** operations using ContactApp.
+- Logger is implemented in order to track the control flow and handle exceptions.
+- Utility methods are implemented in order to solve **DRY** principle.
+- **ContactBean** is created in order to store the state/instance variables.
+- **MVC** Design Pattern is implemented.
+
+## Features
+
+- Add a new contact with a name and phone number.
+- View the list of all contacts.
+- Search for a contact by name.
+- Delete a contact from the list.
+
+## Technologies Used
+
+- Visual Studio Code
