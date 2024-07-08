@@ -2,28 +2,28 @@
 
 ---
 
-This is a simple command-line contact management application written in Java. It allows users to manage a list of contacts by adding new contacts, viewing existing contacts, searching for contacts, and deleting contacts.
+A Simple command-line contact management app written in Java. We can add, view, search and delete contacts.
 
 ## Index
 
 - [Contact Management Application](#contact-management-application)
   - [Index](#index)
-  - [How to Run](#how-to-run)
+  - [Getting Started](#getting-started)
     - [Prerequisites](#prerequisites)
-    - [Steps](#steps)
-  - [Concepts Used.](#concepts-used)
-  - [Problem Statement](#problem-statement)
+    - [Steps to start the app](#steps-to-starttheapp)
   - [Features](#features)
-  - [Technologies Used](#technologies-used)
+    - [Menu 1](#menu-1)
+    - [Menu 2](#menu-2)
+  - [Concepts Used](#concepts-used)
 
-## How to Run
+## Getting Started
 
 ### Prerequisites
 
 - Java Development Kit (JDK) installed
 - Git installed (optional, for cloning the repository).
 
-### Steps
+### Steps to start the app
 
 1. **Clone the repository** (if you have Git installed) or download the repository as a ZIP file and extract it.
 
@@ -47,35 +47,31 @@ This is a simple command-line contact management application written in Java. It
    java ContactApp
    ```
 
-## Concepts Used.
-
-- OOPS
-- Logger
-- IO
-- SingleTon
-- Date class
-- TaskBean
-- MVC1 Design Pattern
-- Scanner Class
-- Collections
-- Exception Handling
-
-## Problem Statement
-
-- Each Contacts are created as text file.
-- User can perform **CRUD** operations using ContactApp.
-- Logger is implemented in order to track the control flow and handle exceptions.
-- Utility methods are implemented in order to solve **DRY** principle.
-- **ContactBean** is created in order to store the state/instance variables.
-- **MVC** Design Pattern is implemented.
-
 ## Features
 
-- Add a new contact with a name and phone number.
-- View the list of all contacts.
-- Search for a contact by name.
-- Delete a contact from the list.
+Once you run the application, you will be presented with a menu to perform the following operations:
 
-## Technologies Used
+### Menu 1
 
-- Visual Studio Code
+1. **Create ContactApp**: Creates a new instance of ContactApp, which is saved as a new text file.
+2. **Load ContactsApp**: Load existing ContactApps and perform CRUD operations on them.
+3. **Search ContactApp**: Check if a specific ContactApp exists.
+4. **List ContactsApp**: Display a list of all ContactApps.
+
+### Menu 2
+
+1. **Create Contact**: Add a new contact with a name, email, and phone number within selected ContactApp.
+2. **List Contacts**: Display all contacts within the selected ContactApp.
+3. **Update Contact**: Modify details of an existing contact within the selected ContactApp.
+4. **Delete Contact**: Remove a contact from the selected ContactApp.
+
+## Concepts Used
+
+- **OOP Principles**: Utilizes object-oriented programming concepts.
+- **Exception Handling**: handling of exceptions to ensure the application runs smoothly.
+- **IO Operations**: Uses Java IO to read and write contact information to text files.
+- **Threads**: Implements threading for concurrent operations.
+- **Singleton Pattern**: Ensures a single instance of the Logger class, where a new thread of execution is created for logging activities, and all logs are written to a single `log.txt` file.
+- **Collections**: Utilizes Java collections framework for managing contacts.
+- **ContactBean**: A simple JavaBean to represent a contact.
+- **MVC1 Design Pattern**: Implements the MVC1 design pattern to separate concerns.
