@@ -34,7 +34,7 @@ A Simple command-line contact management app written in Java. We can add, view, 
 2. **Navigate to the project directory:**
 
    ```
-   cd Java-ContactApp
+   cd java-contact-app
    ```
 
 3. **Compile the Java files:**
