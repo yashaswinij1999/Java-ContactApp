@@ -28,7 +28,7 @@ A Simple command-line contact management app written in Java. We can add, view, 
 1. **Clone the repository** (if you have Git installed) or download the repository as a ZIP file and extract it.
 
    ```
-   https://github.com/yashaswinij1999/Java-ContactApp.git
+   git clone https://github.com/yashaswinij1999/java-contact-app.git
    ```
 
 2. **Navigate to the project directory:**
